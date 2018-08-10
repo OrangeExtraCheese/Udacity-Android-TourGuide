@@ -3,7 +3,7 @@
 
     <!--Strings for UI elements-->
     <string name="icon_map_text">Map:</string>
-    <string name="icon_web_text">Map:</string>
+    <string name="icon_web_text">Website:</string>
     <!--Strings for attractions categories-->
     <string name="category_sport">Sport</string>
     <string name="category_food">Food</string>
