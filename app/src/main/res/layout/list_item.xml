@@ -46,7 +46,7 @@
         <TextView
             android:id="@+id/www_text"
             style="@style/TextWebsite"
-            android:text="website: "
+            android:text="@string/icon_web_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/www_image"
             app:layout_constraintBottom_toBottomOf="@id/www_image"/>
@@ -61,7 +61,7 @@
         <TextView
             android:id="@+id/map_text"
             style="@style/TextMap"
-            android:text="map: "
+            android:text="@string/icon_map_text"
             app:layout_constraintEnd_toStartOf="@id/map_image"
             app:layout_constraintTop_toTopOf="@id/map_image"
             app:layout_constraintBottom_toBottomOf="@id/map_image"/>

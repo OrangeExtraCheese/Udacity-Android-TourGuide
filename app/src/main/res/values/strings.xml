@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">Tour Guide</string>
 
-    <string name="list_item_image_description">Location Image</string>
-
+    <!--Strings for UI elements-->
+    <string name="icon_map_text">Map:</string>
+    <string name="icon_web_text">Map:</string>
+    <!--Strings for attractions categories-->
     <string name="category_sport">Sport</string>
     <string name="category_food">Food</string>
     <string name="category_monuments">Monuments</string>
     <string name="category_culture">Culture</string>
 
+    <!--Strings to fetch data for list items-->
     <string name="sport_url_soccer">http://przebojwolbrom.futbolowo.pl/</string>
     <string name="sport_url_judo">http://www.judowolbrom.pl/</string>
     <string name="sport_url_pool">http://dk.wolbrom.pl/basen/</string>
