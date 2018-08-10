@@ -23,16 +23,17 @@ public class SportFragment extends Fragment
         ArrayList<Location> locationsArray = new ArrayList<>();
         locationsArray.add(new Location(getString(R.string.sport_name_pool),
                 getString(R.string.sport_dscrpt_pool), R.drawable.sport_pool,
-                getString(R.string.sport_map_pool)));
+                getString(R.string.sport_map_pool), getString(R.string.sport_url_pool)));
         locationsArray.add(new Location(getString(R.string.sport_name_soccer),
                 getString(R.string.sport_dscrpt_soccer),
-                R.drawable.sport_soccer, getString(R.string.sport_map_soccer)));
+                R.drawable.sport_soccer, getString(R.string.sport_map_soccer),
+                getString(R.string.sport_url_soccer)));
         locationsArray.add(new Location(getString(R.string.sport_name_tennis),
                 getString(R.string.sport_dscrpt_tennis),
                 R.drawable.sport_tennis, getString(R.string.sport_map_tennis)));
         locationsArray.add(new Location(getString(R.string.sport_name_judo),
                 getString(R.string.sport_dscrpt_judo), R.drawable.sport_judo,
-                getString(R.string.sport_map_judo)));
+                getString(R.string.sport_map_judo), getString(R.string.sport_url_judo)));
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locationsArray,
                 R.color.categorySportLight, R.color.categorySportDark);
