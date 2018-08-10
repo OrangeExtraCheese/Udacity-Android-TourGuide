@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ItemImage">
+        <item name="android:layout_height">@dimen/ItemImageHeight</item>
+        <item name="android:layout_width">@dimen/ItemImageWidth</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/IconWidth</item>
+        <item name="android:layout_height">@dimen/IconHeight</item>
+    </style>
+            <style name="IconWebsite" parent="Icon">
+                <item name="android:layout_marginLeft">@dimen/IconMarginHorizontal</item>
+            </style>
+            <style name="IconMap" parent="Icon">
+                <item name="android:layout_marginRight">@dimen/IconMarginHorizontal</item>
+            </style>
+
+    <style name="Text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+            <style name="TextName" parent="Text">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+                <item name="android:layout_marginLeft">@dimen/TextNameMarginLeft</item>
+                <item name="android:layout_marginTop">@dimen/TextNameMarginTop</item>
+            </style>
+            <style name="TextDescription" parent="Text">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+            </style>
+            <style name="TextWebsite" parent="Text">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+                <item name="android:layout_marginLeft">@dimen/IconTextMarginHorizontal</item>
+            </style>
+            <style name="TextMap" parent="Text">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+                <item name="android:layout_marginRight">@dimen/IconTextMarginHorizontal</item>
+            </style>
+
+    <style name="ScrollViewDescription">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/ScrollViewDescriptionMarginTop</item>
+        <item name="android:layout_marginRight">@dimen/ScrollViewDescriptionMarginVertical</item>
+        <item name="android:layout_marginBottom">@dimen/ScrollViewDescriptionMarginVertical</item>
+    </style>
+
+    <style name="ConstraintLayoutIconBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/IconBarPaddingVertical</item>
+        <item name="android:paddingBottom">@dimen/IconBarPaddingVertical</item>
+    </style>
+
+
+
+</resources>

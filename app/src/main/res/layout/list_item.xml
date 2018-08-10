@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/ItemImage"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/location_name"
+        style="@style/TextName"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tool:text="@string/sport_name_soccer"/>
+
+    <!--To avoid situation when location_description text height exceeds image height -->
+    <android.support.v4.widget.NestedScrollView
+        style="@style/ScrollViewDescription"
+        app:layout_constraintTop_toBottomOf="@id/location_name"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/location_name"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/location_description"
+            style="@style/TextDescription"
+            tool:text="@string/sport_dscrpt_soccer"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- Nested child - ConstraintLayout added to organise icons and text in bar to which
+         background color can be applied (other than root view background -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/icons_bar_constraint_layout"
+        style="@style/ConstraintLayoutIconBar"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/www_text"
+            style="@style/TextWebsite"
+            android:text="website: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/www_image"
+            app:layout_constraintBottom_toBottomOf="@id/www_image"/>
+
+        <ImageView
+            android:id="@+id/www_image"
+            android:src="@drawable/www_icon"
+            style="@style/IconWebsite"
+            app:layout_constraintStart_toEndOf="@id/www_text"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/map_text"
+            style="@style/TextMap"
+            android:text="map: "
+            app:layout_constraintEnd_toStartOf="@id/map_image"
+            app:layout_constraintTop_toTopOf="@id/map_image"
+            app:layout_constraintBottom_toBottomOf="@id/map_image"/>
+
+        <ImageView
+            android:id="@+id/map_image"
+            android:src="@drawable/map_icon"
+            style="@style/IconMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

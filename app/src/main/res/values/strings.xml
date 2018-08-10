@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+
+    <string name="list_item_image_description">Location Image</string>
+
+    <string name="category_sport">Sport</string>
+    <string name="category_food">Food</string>
+    <string name="category_monuments">Monuments</string>
+    <string name="category_culture">Culture</string>
+
+    <string name="sport_url_soccer">http://przebojwolbrom.futbolowo.pl/</string>
+    <string name="sport_url_judo">http://www.judowolbrom.pl/</string>
+    <string name="sport_url_pool">http://dk.wolbrom.pl/basen/</string>
+
+    <string name="sport_name_soccer">Przebój Wolbrom</string>
+    <string name="sport_name_tennis">Tennis Court</string>
+    <string name="sport_name_judo">Judo Club</string>
+    <string name="sport_name_pool">Swimming pool</string>
+
+    <string name="sport_map_soccer">Stadion+Leśna</string>
+    <string name="sport_map_tennis">Kort+tenisowy+Kamiennogórska</string>
+    <string name="sport_map_judo">Judo+Leśna</string>
+    <string name="sport_map_pool">Kompleks+Basenów+Kamiennogórska</string>
+
+    <string name="sport_dscrpt_soccer">A a soccer club with a long tradition. Beside professional
+        teams for adults and minors, it has a soccer school for kids. Other sport activities also
+        take place here. You can watch match every weekend. </string>
+    <string name="sport_dscrpt_tennis">Open for everyone</string>
+    <string name="sport_dscrpt_judo">Club for minors. Worth of mentioning that Wolbrom\'s judokas
+        belong to best in voivodship</string>
+    <string name="sport_dscrpt_pool">Great for hot days: outdoor and indoor pools, the fisrt one
+        with jumping tower. The lesser with gym and sauna. Also swimming pool for little kids. </string>
+
+
+    <string name="food_name_graffiti">Pizzeria Graffiti</string>
+    <string name="food_name_rynek23">Rynek 23</string>
+    <string name="food_name_kebab">Kebab Alena</string>
+    <string name="food_name_klimtowka">Restauracja Klimtówka</string>
+
+    <string name="food_url_graffiti">https://www.facebook.com/Pizzeria-Graffiti-381952198569751//</string>
+    <string name="food_url_rynek23">https://www.facebook.com/rynek23</string>
+    <string name="food_url_kebab">http://www.kebabalena.wolbrom.info/</string>
+    <string name="food_url_klimtówka">http://www.klimtowka.pl/</string>
+
+    <string name="food_map_graffiti">Pizzeria+Graffiti+Miechowska</string>
+    <string name="food_map_rynek23">Rynek+23</string>
+    <string name="food_map_kebab">Kebab+Alena+20+Straconych</string>
+    <string name="food_map_klimtowka">Klimtówka+Ordona</string>
+
+    <string name="food_dscrpt_graffiti">Tasty pizza being quite an opposition of Italian Pizza,
+        with thick dough and definitely rich in meat toppings </string>
+    <string name="food_dscrpt_rynek23">Italian style pizza and American style burgers.</string>
+    <string name="food_dscrpt_kebab">\"Traditional\" Polish kebab, available, of course, with spicy
+        sauce. Burgers, pizza and toasted cheese sandwiches are also to be found in menu. </string>
+    <string name="food_dscrpt_klimtowka">This founded in 2005 inn quickly became most prestigious
+        restaurant in town, and now also includes small and comfortable hotel.</string>
+
+
+    <string name="monuments_name_church">Church of Saint Mary</string>
+    <string name="monuments_name_cemetery">Jewish Cemetery</string>
+    <string name="monuments_name_statue">Statue of  Jan Kiliński</string>
+    <string name="monuments_name_mig_fighter">Fighter MIG-17</string>
+
+    <string name="monuments_url_church">https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Niepokalanego_Pocz%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Wolbromiu</string>
+    <string name="monuments_url_cemetery">https://pl.wikipedia.org/wiki/Cmentarz_%C5%BCydowski_w_Wolbromiu</string>
+
+    <string name="monuments_map_church">gen+Kościuszki+20</string>
+    <string name="monuments_map_cementery">50°22\'32.1"N 19°45\'21.8"E</string>
+    <string name="monuments_map_statue">Rynek+17</string>
+    <string name="monuments_map_mig_fighter">50°22\'33.5"N 19°45\'38.0"E</string>
+
+    <string name="monuments_dscrpt_church">Situated in front of former hospital for the poor in 1638,
+        this small church is most beloved monument of locals and small marvel of woodcraft.</string>
+    <string name="monuments_dscrpt_cementery">Created in XIX century, Jewish Cemetery was
+        devastated during World War 2. In 1988 was made a memorial to memory of Jews, who made
+        significant part of town population before WW 2.</string>
+    <string name="monuments_dscrpt_statue">Statue of Jan Kiliński funded by Wolbrom Shoemaker Guild
+        in 1924. A shoemaker by trade, born 1760, Jan Kiliński was colonel in Warsaw Insurrection.
+        As a resident of Warsaw, born there, he is not related directly with Wolbrom.</string>
+    <string name="monuments_dscrpt_mig_fighter">Original MIG-17 Jet Fighter was given as a gift from
+        Dęblin military unit to "Stomil" factory in 1980. Production started in 1950 in CCCP, MIG-17
+        was used in 40 countries all over the world.</string>
+
+
+    <string name="culture_name_wolbromiacy">Zespół Pieśni i Tańca Wolbromiacy</string>
+    <string name="culture_name_days_of_wolbrom">Days of Wolbrom</string>
+    <string name="culture_name_cinema">Kino Radość</string>
+
+    <string name="culture_url_wolbromiacy">https://pl-pl.facebook.com/zpitwolbromiacy/</string>
+    <string name="culture_url_cinema">http://dk.wolbrom.pl/kino/</string>
+
+    <string name="culture_map_wolbromiacy">Leśna+2</string>
+    <string name="culture_map_days_of_wolbrom">Leśna+2</string>
+    <string name="culture_map_cinema">Leśna+2</string>
+
+    <string name="culture_dscrpt_wolbromiacy">Created in 1979 folk dance and song club shows value
+        of tradition in over 500 performances in Poland and Europe. Participation in it is quite
+        popular among Wolbrom kids and young people. Acts on the same scene where cinema is.</string>
+    <string name="culture_dscrpt_days_of_wolbrom">Annual celebration of town includes free concerts,
+        fireworks, amusement park and toy bazaar open for everyone for 3 days. The last one
+            took place at 22-24 June</string>
+    <string name="culture_dscrpt_cinema">A small cinema unique in that it also holds theater shows
+        on the same scene.</string>
+
+</resources>

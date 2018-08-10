@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ItemImageWidth">175dp</dimen>
+    <dimen name="ItemImageHeight">150dp</dimen>
+
+    <dimen name="ScrollViewDescriptionMarginTop">8dp</dimen>
+    <dimen name="ScrollViewDescriptionMarginVertical">8dp</dimen>
+
+    <dimen name="TextNameMarginLeft">16dp</dimen>
+    <dimen name="TextNameMarginTop">8dp</dimen>
+
+    <dimen name="IconWidth">48dp</dimen>
+    <dimen name="IconHeight">48dp</dimen>
+    <dimen name="IconMarginHorizontal">16dp</dimen>
+
+    <dimen name="IconTextMarginHorizontal">16dp</dimen>
+
+    <dimen name="IconBarPaddingVertical">8dp</dimen>
+</resources>

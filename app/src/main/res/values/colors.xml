@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tabBarBackground">#039BE5</color>
+    <color name="tabBarText">#FFFF00</color>
+
+    <color name="categorySportLight">#558B2F</color>
+    <color name="categorySportDark">#FF33691E</color>
+
+    <color name="categoryFoodLight">#FFAB91</color>
+    <color name="categoryFoodDark">#FF8A65</color>
+
+    <color name="categoryCultureLight">#FFEB3B</color>
+    <color name="categoryCultureDark">#FF8F00</color>
+
+    <color name="categoryMonumentLight">#8D6E63</color>
+    <color name="categoryMonumentDark">#795548</color>
+
+
+</resources>
