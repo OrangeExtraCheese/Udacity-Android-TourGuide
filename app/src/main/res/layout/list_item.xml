@@ -53,7 +53,7 @@
 
         <ImageView
             android:id="@+id/www_image"
-            android:src="@drawable/www_icon"
+            android:src="@drawable/icon_website"
             style="@style/IconWebsite"
             app:layout_constraintStart_toEndOf="@id/www_text"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -68,7 +68,7 @@
 
         <ImageView
             android:id="@+id/map_image"
-            android:src="@drawable/map_icon"
+            android:src="@drawable/icon_map"
             style="@style/IconMap"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
