@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SportFragment extends Fragment
 {
@@ -20,7 +21,7 @@ public class SportFragment extends Fragment
     {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        ArrayList<Location> locationsArray = new ArrayList<>();
+        List<Location> locationsArray = new ArrayList<>();
         locationsArray.add(new Location(getString(R.string.sport_name_pool),
                 getString(R.string.sport_dscrpt_pool), R.drawable.sport_pool,
                 getString(R.string.sport_map_pool), getString(R.string.sport_url_pool)));

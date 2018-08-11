@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MonumentsFragment extends Fragment
 {
@@ -19,7 +20,7 @@ public class MonumentsFragment extends Fragment
     {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        ArrayList<Location> locationsArray = new ArrayList<>();
+        List<Location> locationsArray = new ArrayList<>();
         locationsArray.add(new Location(getString(R.string.monuments_name_church),
                 getString(R.string.monuments_dscrpt_church), R.drawable.monuments_church,
                 getString(R.string.monuments_map_church), getString(R.string.monuments_url_church)));

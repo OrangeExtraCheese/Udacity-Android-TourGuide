@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class FoodFragment extends Fragment
@@ -20,7 +21,7 @@ public class FoodFragment extends Fragment
     {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        ArrayList<Location> locationsArray = new ArrayList<>();
+        List<Location> locationsArray = new ArrayList<>();
         locationsArray.add(new Location(getString(R.string.food_name_graffiti),
                 getString(R.string.food_dscrpt_graffiti), R.drawable.food_graffiti,
                 getString(R.string.food_map_graffiti), getString(R.string.food_url_graffiti)));

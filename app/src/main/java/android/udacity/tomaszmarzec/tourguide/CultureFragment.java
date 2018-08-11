@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CultureFragment extends Fragment
 {
@@ -19,7 +20,7 @@ public class CultureFragment extends Fragment
     {
         View rootView = inflater.inflate(R.layout.list, container, false);
 
-        ArrayList<Location> locationsArray = new ArrayList<>();
+        List<Location> locationsArray = new ArrayList<>();
         locationsArray.add(new Location(getString(R.string.culture_name_cinema),
                 getString(R.string.culture_dscrpt_cinema), R.drawable.culture_cinema,
                 getString(R.string.culture_map_cinema), getString(R.string.culture_url_cinema)));
