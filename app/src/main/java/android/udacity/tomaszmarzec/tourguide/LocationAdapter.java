@@ -70,8 +70,8 @@ public class LocationAdapter extends ArrayAdapter<Location>
                 @Override
                 public void onClick(View v)
                 {
-                    Toast t = Toast.makeText(getContext(), "There is no website available " +
-                            "for this location", Toast.LENGTH_LONG);
+                    Toast t = Toast.makeText(getContext(),
+                            getContext().getString(R.string.toast_no_url_message), Toast.LENGTH_LONG);
                     t.show();
                 }
             };
