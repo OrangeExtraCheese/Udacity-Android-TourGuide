@@ -14,8 +14,8 @@ public class Location
         mURL = URL;
     }
 
-    /*Not every location has it's own website, in this case, this location object is created using
-    this constructor, and mURL takes default value "none" */
+    /*Not every location has it's own website, so this constructor omits url parameter, LocationAdapter
+      handles null value returned from mURL. */
     public Location(String name, String description, int imgId, String mapQuery)
     {
         mName = name;
