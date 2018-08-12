@@ -89,35 +89,35 @@ public class LocationAdapter extends ArrayAdapter<Location>
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
-        View listItemView = convertView;
-        if(listItemView==null)
+        
+        if(convertView==null)
         {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        listItemView.setBackgroundColor(ContextCompat.getColor(getContext(), mFirstBackgroundColorId));
+        convertView.setBackgroundColor(ContextCompat.getColor(getContext(), mFirstBackgroundColorId));
 
-        ConstraintLayout iconsBarView = listItemView.findViewById(R.id.icons_bar_constraint_layout);
+        ConstraintLayout iconsBarView = convertView.findViewById(R.id.icons_bar_constraint_layout);
         iconsBarView.setBackgroundColor(ContextCompat.getColor(getContext(), mSecondBackgroundColorId));
 
         Location location = getItem(position);
 
-        ImageView imageView = listItemView.findViewById(R.id.image);
+        ImageView imageView = convertView.findViewById(R.id.image);
         imageView.setImageResource(location.getImgId());
 
-        TextView nameView = listItemView.findViewById(R.id.location_name);
+        TextView nameView = convertView.findViewById(R.id.location_name);
         nameView.setText(location.getName());
 
-        TextView descriptionView = listItemView.findViewById(R.id.location_description);
+        TextView descriptionView = convertView.findViewById(R.id.location_description);
         descriptionView.setText(location.getDescription());
 
-       ImageView mapView = listItemView.findViewById(R.id.map_image);
+       ImageView mapView = convertView.findViewById(R.id.map_image);
         mapView.setOnClickListener(createOnClickMapIntent(location.getMapQuery()));
 
-        ImageView webView = listItemView.findViewById(R.id.www_image);
+        ImageView webView = convertView.findViewById(R.id.www_image);
         webView.setOnClickListener(createOnClickBrowserIntent(location.getURL()));
 
-        return listItemView;
+        return convertView;
     }
 
     /*This method dismisses toast message. It is called when user clicks on map or web icon, and
