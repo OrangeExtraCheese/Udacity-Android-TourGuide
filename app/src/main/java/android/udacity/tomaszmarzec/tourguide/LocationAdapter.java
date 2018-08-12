@@ -2,8 +2,6 @@ package android.udacity.tomaszmarzec.tourguide;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.media.Image;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +22,7 @@ public class LocationAdapter extends ArrayAdapter<Location>
     private int mFirstBackgroundColorId;
     private int mSecondBackgroundColorId;
     private static Toast mToast;
+
 
     public LocationAdapter(@NonNull Context context, @NonNull List<Location> objects, int firstBackgroundColorId, int secondBackgroundColorId)
     {
@@ -85,6 +83,7 @@ public class LocationAdapter extends ArrayAdapter<Location>
             };
     }
 
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
@@ -101,6 +100,7 @@ public class LocationAdapter extends ArrayAdapter<Location>
         iconsBarView.setBackgroundColor(ContextCompat.getColor(getContext(), mSecondBackgroundColorId));
 
         Location location = getItem(position);
+
 
         ImageView imageView = convertView.findViewById(R.id.image);
         imageView.setImageResource(location.getImgId());
