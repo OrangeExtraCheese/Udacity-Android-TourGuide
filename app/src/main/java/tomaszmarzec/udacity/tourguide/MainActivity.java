@@ -1,3 +1,4 @@
+//Package renamed because "udacity" folder in it caused error in Butterknife
 package tomaszmarzec.udacity.tourguide;
 
 import android.support.design.widget.TabLayout;

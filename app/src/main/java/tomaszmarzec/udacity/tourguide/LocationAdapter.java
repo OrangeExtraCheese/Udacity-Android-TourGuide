@@ -1,3 +1,4 @@
+//Package renamed because "udacity" folder in it caused error in Butterknife
 package tomaszmarzec.udacity.tourguide;
 
 import android.content.Context;
@@ -18,11 +19,22 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class LocationAdapter extends ArrayAdapter<Location>
 {
+    @BindView(R.id.image) protected ImageView locationImgView;
+    @BindView(R.id.map_image) protected ImageView mapImgView;
+    @BindView(R.id.www_image) protected ImageView webImgView;
+    @BindView(R.id.icons_bar_constraint_layout) protected ConstraintLayout iconsBarView;
+    @BindView(R.id.location_name) protected TextView nameTxtView;
+    @BindView(R.id.location_description) protected TextView dscrptnTxtView;
+
     private int mFirstBackgroundColorId;
     private int mSecondBackgroundColorId;
     private static Toast mToast;
+    private String address;
 
 
     public LocationAdapter(@NonNull Context context, @NonNull List<Location> objects, int firstBackgroundColorId, int secondBackgroundColorId)
@@ -84,7 +96,6 @@ public class LocationAdapter extends ArrayAdapter<Location>
             };
     }
 
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
@@ -95,28 +106,22 @@ public class LocationAdapter extends ArrayAdapter<Location>
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        convertView.setBackgroundColor(ContextCompat.getColor(getContext(), mFirstBackgroundColorId));
+        ButterKnife.bind(this, convertView);
 
-        ConstraintLayout iconsBarView = convertView.findViewById(R.id.icons_bar_constraint_layout);
+        convertView.setBackgroundColor(ContextCompat.getColor(getContext(), mFirstBackgroundColorId));
         iconsBarView.setBackgroundColor(ContextCompat.getColor(getContext(), mSecondBackgroundColorId));
 
         Location location = getItem(position);
 
+        locationImgView.setImageResource(location.getImgId());
+        nameTxtView.setText(location.getName());
+        dscrptnTxtView.setText(location.getDescription());
+        mapImgView.setOnClickListener(createOnClickMapIntent(location.getMapQuery()));
+        webImgView.setOnClickListener(createOnClickBrowserIntent(location.getURL()));
 
-        ImageView imageView = convertView.findViewById(R.id.image);
-        imageView.setImageResource(location.getImgId());
-
-        TextView nameView = convertView.findViewById(R.id.location_name);
-        nameView.setText(location.getName());
-
-        TextView descriptionView = convertView.findViewById(R.id.location_description);
-        descriptionView.setText(location.getDescription());
-
-       ImageView mapView = convertView.findViewById(R.id.map_image);
-        mapView.setOnClickListener(createOnClickMapIntent(location.getMapQuery()));
-
-        ImageView webView = convertView.findViewById(R.id.www_image);
-        webView.setOnClickListener(createOnClickBrowserIntent(location.getURL()));
+        /*Unfortunately I did not figure out how to reduce boilerplate code of methods creating
+          listeners. @OnClick is simple but I don't know how to pass arguments from current Location
+          object (line 115) to it. For example, website url from location.getUrl() */
 
         return convertView;
     }
