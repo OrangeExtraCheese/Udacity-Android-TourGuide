@@ -1,9 +1,10 @@
-package android.udacity.tomaszmarzec.tourguide;
+package tomaszmarzec.udacity.tourguide;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.udacity.tomaszmarzec.tourguide.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

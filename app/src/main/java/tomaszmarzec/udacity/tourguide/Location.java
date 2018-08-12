@@ -1,4 +1,4 @@
-package android.udacity.tomaszmarzec.tourguide;
+package tomaszmarzec.udacity.tourguide;
 
 public class Location
 {

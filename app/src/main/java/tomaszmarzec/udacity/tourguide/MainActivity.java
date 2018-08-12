@@ -1,11 +1,10 @@
-package android.udacity.tomaszmarzec.tourguide;
+package tomaszmarzec.udacity.tourguide;
 
-import android.location.Location;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.udacity.tomaszmarzec.tourguide.R;
 
 public class MainActivity extends AppCompatActivity
 {

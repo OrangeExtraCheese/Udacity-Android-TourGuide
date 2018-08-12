@@ -1,10 +1,11 @@
-package android.udacity.tomaszmarzec.tourguide;
+package tomaszmarzec.udacity.tourguide;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.udacity.tomaszmarzec.tourguide.R;
 
 public class CustomFragmentPagerAdapter extends FragmentPagerAdapter
 {
