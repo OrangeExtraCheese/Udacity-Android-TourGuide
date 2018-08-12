@@ -2,6 +2,7 @@ package android.udacity.tomaszmarzec.tourguide;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Image;
 import android.net.Uri;
 import android.support.annotation.NonNull;
@@ -23,6 +24,7 @@ public class LocationAdapter extends ArrayAdapter<Location>
 {
     private int mFirstBackgroundColorId;
     private int mSecondBackgroundColorId;
+    private static Toast mToast;
 
     public LocationAdapter(@NonNull Context context, @NonNull List<Location> objects, int firstBackgroundColorId, int secondBackgroundColorId)
     {
@@ -38,6 +40,8 @@ public class LocationAdapter extends ArrayAdapter<Location>
             @Override
             public void onClick(View v)
             {
+                cancelToast();
+
                 String uri;
                 if(address.contains("°")) //checks if given address is in form of coordinates
                     uri = "http://maps.google.co.in/maps?q=" + address;
@@ -59,6 +63,8 @@ public class LocationAdapter extends ArrayAdapter<Location>
                 @Override
                 public void onClick(View v)
                 {
+                    cancelToast();
+
                     Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(URL));
                     getContext().startActivity(i);
                 }
@@ -70,12 +76,13 @@ public class LocationAdapter extends ArrayAdapter<Location>
                 @Override
                 public void onClick(View v)
                 {
-                    Toast t = Toast.makeText(getContext(),
+                    cancelToast();
+
+                    mToast = Toast.makeText(getContext(),
                             getContext().getString(R.string.toast_no_url_message), Toast.LENGTH_LONG);
-                    t.show();
+                    mToast.show();
                 }
             };
-
     }
 
     @NonNull
@@ -113,6 +120,13 @@ public class LocationAdapter extends ArrayAdapter<Location>
         return listItemView;
     }
 
+    /*This method dismisses toast message. It is called when user clicks on map or web icon, and
+      also when user switches tab. This method is called by ViewPager.OnPageChangeListener() in
+      Main Activity, so I declared it static. */
 
-
+    public static void cancelToast()
+    {
+        if(mToast!=null)
+            mToast.cancel();
+    }
 }
