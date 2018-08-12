@@ -10,6 +10,9 @@
     <string name="category_monuments">Monuments</string>
     <string name="category_culture">Culture</string>
 
+    <!-- I forgot to commit strings.xml after adding this line -->
+    <string name="toast_no_url_message">There is no website available for this location.</string>
+
     <!--Strings to fetch data for list items-->
     <string name="sport_url_soccer">http://przebojwolbrom.futbolowo.pl/</string>
     <string name="sport_url_judo">http://www.judowolbrom.pl/</string>
